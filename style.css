@@ -1,0 +1,28 @@
+body {
+    background-color: #d4b09f;
+}
+
+.body {
+    width: 50vw;
+    justify-self: center;
+}
+
+#header {
+    padding: 30px;
+    padding-left: 48px;
+    display: flex;
+    align-items: center;
+    background-color: #f0bddf;
+    justify-content: space-between;
+}
+
+.header-navigation {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header-contact {
+    line-height: 9px;
+    
+}

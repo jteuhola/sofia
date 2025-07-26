@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Art Sofé</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="header-navigation">
+        <h1 style="font-weight: bold; margin-right: 48px">
+          <a href="index.html" style="color: black; text-decoration: none"
+            ><i>Art Sofé</i></a
+          >
+        </h1>
+        <a href="pages/about.html">Meistä</a>
+        <a href="pages/events.html">Tulevat tapahtumat</a>
+      </div>
+      <div class="header-contact">
+        <p><strong>Osoite:</strong> Taidekahvilantie 12</p>
+        <p><strong>Puhelinnumero:</strong> 0123456789</p>
+        <p><strong>Sähköposti:</strong> art.sofe@email.com</p>
+        <p><strong>Avoinna:</strong> ke-su klo: 10-19</p>
+      </div>
+    </div>
+    <img
+      src="img/cafe.png"
+      alt="cafeteria"
+      style="
+        width: 100vw;
+        height: 20vh;
+        object-fit: cover;
+        object-position: 50% 65%;
+      "
+    />
+    <div style="width: 50vw; justify-self: center">
+      <h3>
+        Art Sofé on Turussa sijaitseva tunnelmallinen ja lämminhenkinen kahvila,
+        joka tarjoaa kahvittelun lomassa mahdollisuuden taiteen luomiseen ja
+        katseluun.
+      </h3>
+
+      <p>
+        Ostaessasi kahvilan tuotteen, saat kahvittelun ajaksi taidevälinesetin
+        lainaan, mikä sisältää kattavan valikoiman taidevälineitä ja
+        materiaaleja sekä yhden canvas-maalauspohjan. Välineillä saat toteuttaa
+        luovuuttasi vapaasti, oman mielesi mukaan.<br />
+        Kun teos valmistuu, voit halutessasi jättää sen kahvilaan odottamaan
+        taidenäyttelyyn pääsyä, jossa myös kahvilan muut asiakkaat pääsevät
+        ihailemaan työsi tulosta. Jos et malta odottaa teoksen ripustamista
+        omalle seinällesi, voit ottaa työsi myös samantien mukaan. <br /><br />
+        Tule yksin tai yhdessä. Olemme avoinna keskiviikosta sunnuntaihin klo.
+        10-19 välillä.
+      </p>
+
+      <div>
+        <h2>Menu</h2>
+        <i style="font-weight: bold">
+          <p id="date"></p>
+        </i>
+        <p>
+          Valikoimastamme löytyy kattava valikoima erilaisia kylmiä ja kuumia
+          juotavia sekä suolaisia ja makeita leivonnaisia. Tuotteemme
+          vaihtelevat kausittain. <br />
+          <br /><strong>Kaikki tuotteemme ovat täysin vegaanisia! </strong
+          ><br />
+          <br />
+
+          Pysyvästi listallamme:
+        </p>
+        <h4>Juomat</h4>
+        <ul style="padding-left: 4vw">
+          <li>Tavallinen kahvi</li>
+          <li>Jääkahvi</li>
+          <li>Caffé latte</li>
+          <li>Mochaccino</li>
+          <li>Cappuccino</li>
+          <li>Espresso</li>
+          <li>Tee</li>
+          <li>Jäätee</li>
+        </ul>
+        <h4>Syötävät</h4>
+        <ul style="padding-left: 4vw">
+          <li>Suolainen piirakka</li>
+          <li>Täytetty croissantti</li>
+          <li>Täytetty bagel</li>
+          <li>Kakkupala</li>
+          <li>Korvapuusti</li>
+          <li>Nallemunkki</li>
+        </ul>
+        <script>
+          const dateElement = document.getElementById("date");
+          const today = new Date();
+          dateElement.textContent = today.toLocaleDateString("fi-FI", {
+            year: "numeric",
+            day: "numeric",
+            month: "long",
+            weekday: "long",
+          });
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
